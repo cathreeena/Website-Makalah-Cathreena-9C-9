@@ -1,0 +1,191 @@
+body {
+    background-color: rgb(252, 224, 202);
+}
+header {
+    background: linear-gradient(90deg,
+rgb(225, 75, 75),
+rgba(233, 115, 107, 0.911),
+rgb(238, 153, 117),
+rgb(245, 211, 161),
+rgb(254, 157, 122),
+rgb(224, 97, 97),
+rgb(225, 75, 75));
+    box-shadow: 0px 0px 25px rgb(160, 102, 102);
+    padding: 10px 50px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+}
+
+.logoheader {
+    height: 75px;
+    margin-right: auto;
+}
+
+nav {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+nav a {
+    padding: 5px 15px;
+    color: rgb(97, 38, 38);
+    text-decoration: none;
+    transition: 1s;
+    font-size: 16px;
+}
+
+nav a:hover{
+background-color: rgb(138, 38, 38);
+color: rgb(243, 138, 138);
+    border-radius: 30px 30px 30px 30px;
+    box-shadow: 0px 0px 10px rgb(138, 66, 38);
+    transition: 0.55s;
+}
+
+.descriptionhome a {
+    background-color: rgb(199, 83, 83);
+    color: rgb(240, 185, 183);
+    padding: 8px 10px;
+    border-radius: 15px 15px 15px;
+    width: 60%;
+    margin: auto;
+}
+.decs.home{
+    width: 50%;
+    margin-left: 25%;
+    text-align: justify;
+    padding: 20px;
+}
+ .descriptionhome a:hover{
+    color: rgb(145, 67, 67);
+    background-color: rgb(95, 20, 20);
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 0px 0px 10px rgb(138, 66, 38);
+    transition: 0.3s;
+ }
+
+.home{
+    background-image: url('bg4.jpg');
+    height: 600px;
+    background-size: cover;
+    padding: 100px;
+}
+
+
+
+ .about{
+    height: 800px;
+    background-color: rgb(255, 234, 207);
+ }
+
+ .containerabout{
+    background: linear-gradient(90deg,
+rgb(208, 145, 90),
+rgba(233, 172, 107, 0.911),
+rgb(252, 208, 114),
+rgb(239, 249, 178),
+rgb(250, 239, 117),
+rgba(233, 172, 107, 0.911),
+rgb(208, 145, 90));
+    width: 50%;
+    margin-left: 25%;
+    text-align: center;
+    height: 70%;
+    padding-top: 50px;
+    padding: 15px 15px;
+ }
+
+ .containerabout img{
+    height: 200px;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 0px 0px 15px rgb(138, 66, 38);
+ }
+ h1{
+    color:rgb(134, 38, 9);
+ }
+ h2{
+    color: rgb(82, 32, 32);
+ }
+ h3{
+    color: rgb(100, 29, 20);
+ }
+
+.cardProfile{
+    background: linear-gradient(90deg,
+rgb(208, 90, 90),
+rgba(233, 115, 107, 0.911),
+rgb(255, 141, 141),
+rgb(255, 201, 201),
+rgb(252, 138, 138),
+rgb(224, 97, 97),
+rgb(225, 75, 75));
+border-radius: 10px 10px 10px 10px;
+padding: 15px;
+width: 300px;
+margin: auto;
+text-align: center;
+margin-bottom: 150px;
+}
+
+.imgProfile img{
+width: 50%;
+border-radius: 5px 5px 5px 5px;
+}
+
+.medsos{
+left: 0;
+bottom: 0;
+width: 100%;
+text-align: center;
+height:40px;
+padding-top:5px;
+}
+.medsos a{
+text-decoration: none;
+padding: 10px 10px;
+font-size: 24px;
+}
+
+section.howto {
+    height: auto;
+    min-height: 800px;
+    padding-top: 100px;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.deskHowto {
+    display: flex;
+    width: 80%;
+    margin: auto;
+    text-align: justify;
+    align-items: flex-start;
+    gap: 40px;
+    h3{
+        color: rgb(155, 10, 10);
+    }
+    
+}
+
+.penjelasan {
+    flex: 1;
+    text-align: justify;
+}
+
+.dokumentasi {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.howto img {
+    height: 500px;
+    width: auto;
+    border-radius: 10px;
+    object-fit: cover;
+}
