@@ -1,5 +1,6 @@
-body {
+body, html {
     background-color: rgb(252, 224, 202);
+    scroll-behavior: smooth;
 }
 header {
     background: linear-gradient(90deg,
@@ -179,6 +180,7 @@ animation: gradient-animation 5s ease infinite alternate;
     margin-top: -80px;
      text-align: justify;
      padding: 20px;
+     color: #712424;
      }
  .top img{
     height: 350px;
@@ -280,18 +282,32 @@ animation: gradient-animation 5s ease infinite alternate;
     border-radius: 10px;
     margin-left: 350px;
     margin-top: -80px;
-
+    animation: chibi 5s infinite;
+}
+@keyframes chibi {
+     0%, 100% {
+    transform: translateY(0); /* Posisi awal & akhir (di tanah) */
+  }
+  50% {
+    transform: translateY(-20px); /* Puncak lompatan (naik 50px) */
+  }
 }
 .sand{
 margin-left: 75px;
 margin-right: 0;
 margin-bottom: 70px;
 }
-
-
-
+.profile{
+background-image: url('flower\ patern.jpg') ;
+height: 450px;
+animation: profile 20s linear infinite;
+}
+@keyframes profile {
+    0% { background-position: 0 0; }
+    100% { background-position: 0 1000px; }
+}
 .cardProfile{
-    background: linear-gradient(90deg,
+background: linear-gradient(90deg,
 rgb(208, 90, 90),
 rgba(233, 115, 107, 0.911),
 rgb(255, 141, 141),
@@ -300,16 +316,27 @@ rgb(252, 138, 138),
 rgb(224, 97, 97),
 rgb(225, 75, 75));
 border-radius: 10px 10px 10px 10px;
-padding: 15px;
-width: 300px;
+padding: 25px;
+height: 460px;
+width:280px;
 margin: auto;
 text-align: center;
-margin-bottom: 150px;
+margin-bottom: 350px;
+margin-top: 250px;
+font-family: 'crete round';
 }
 
-.imgProfile img{
-width: 50%;
-border-radius: 5px 5px 5px 5px;
+.imgProfile img {
+    margin-top: 35px;
+    width: 200px;
+    border-radius: 10px;
+    transition: all 0.5s ease; 
+}
+
+.imgProfile img:hover {
+    content: url('img2.png'); 
+    transform: scale(1.05);
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.5);
 }
 
 .medsos{
@@ -324,15 +351,14 @@ padding-top:5px;
 text-decoration: none;
 padding: 10px 10px;
 font-size: 24px;
+color: #712424;
 }
 
 section.howto {
-    height: 1200px;
+    height: 950px;
     padding-top: 100px;
     align-items: center;
     background-image:url('cloudbg.png');
-    -webkit-mask-image: linear-gradient(to bottom, black 90%, transparent 100%);
-    mask-image: linear-gradient(to bottom, black 0%, black 90%, transparent 100%);
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
@@ -351,7 +377,11 @@ section.howto {
     border-color: rgb(147, 135, 107);
     border-width: 10px;
     border-style: solid;
-
+    animation : deskhowto 5s linear infinite alternate;
+}
+@keyframes deskhowto {
+    0% { background-position: 0 0; }
+    100% { background-position: 100% 0; }
 }
 
 .VCOtitle {
@@ -374,9 +404,16 @@ section.howto {
     margin-bottom: 10px;
     font-weight: bold;
     font-family: 'Aclonica';
-    color: rgb(212, 124, 47);
+    color: rgb(159, 91, 31);
+    animation: title 5s infinite;
 }
-
+@keyframes title{
+    0% { transform: translate(0, 0); }
+    25% { transform: translate(5px, 0); }
+    50% { transform: translate(0, 0); }
+    75% { transform: translate(-5px, 0); }
+    100% { transform: translate(0, 0); }
+}
 
 .alatnbahan {
     display: flex;
@@ -429,6 +466,7 @@ section.howto {
    border-radius: 10px;
    border: 10px solid rgb(247, 236, 223);
    height: auto;
+   animation: rotate 2s infinite alternate;
 }
 .dok2 {
     margin-top: 500px;
@@ -441,4 +479,13 @@ section.howto {
     border: 10px solid rgb(247, 236, 223);
     height: auto;
     display: block;
+    animation: rotate2 2s infinite alternate;
+}
+@keyframes rotate {
+    0% { transform: rotate(10deg); }
+    100% { transform: rotate(-05deg); }
+}
+@keyframes rotate2 {
+    0% { transform: rotate(-10deg); }
+    100% { transform: rotate(05deg); }
 }
